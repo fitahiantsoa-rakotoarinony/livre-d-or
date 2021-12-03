@@ -7,8 +7,8 @@
     background-color: rgb(255, 163, 163);
   }
 
-  /* Style hearder*/
- /
+  /*hearder*/
+
   header {
     display: flex;
     justify-content: space-between;
@@ -107,7 +107,7 @@
   }
   
  
-  /* style page commentaire */
+  /*commentaire */
 
   .formcommentaire {
     display: flex;
@@ -157,7 +157,7 @@
   }
   
 
-  /* style profil */
+  /* profil */
  
   
   .element3 {
@@ -179,7 +179,7 @@
     padding: 30px;
   }
 
-  /* style page index */
+  /* index */
   
   
   .child1 {

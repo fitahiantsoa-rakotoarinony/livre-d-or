@@ -10,7 +10,7 @@ $message1 = null;
 //on verifie l'etat du contenu de notre input
 if (!empty($_POST['commentaire']) && isset($_POST['commentaire'])) {
 
-    // La fonction nl2br pour faire respecté le passage a la ligne que l'utilisateur fera
+    // La fonction nl2br pour faire respecté le passage a la ligne que l'utilisateur ferai
     $commentaire = nl2br(addslashes($_POST['commentaire']));
 
     $id =  $_SESSION['user-connecte']['id'];

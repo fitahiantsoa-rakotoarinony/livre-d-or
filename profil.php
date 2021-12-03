@@ -7,7 +7,7 @@ require 'base de donnée.php';
 obliger_utilisateur_connecte();
 
 
-// mes informations actuelle dans ma session venant de la bdd
+// informations de session venant de la base de donnée
 $id = $_SESSION['user-connecte']['id'];
 $login = $_SESSION['user-connecte']['login'];
 $password = $_SESSION['user-connecte']['password'];
@@ -20,7 +20,7 @@ $message = null;
 
 if (!empty($_POST)) {
 
-    //les informations qui seront saisi par l'utilisateur pour les modifications
+    //les informations qui seront saisie par l'utilisateur pour faire les modifications
     $loginp =  strip_tags($_POST['login']);
     $passwordp = strip_tags($_POST['password']);
     $confirm_password = strip_tags($_POST['confirm-password']);
@@ -32,7 +32,7 @@ if (!empty($_POST)) {
             $passwordp =  password_hash($passworndp, PASSWORD_ARGON2I);
 
             // $passwordp = password_hash($_POST['password'], PASSWORD_ARGON2I);
-            //Requète sql pour mettre a jour les informations dans la base de donnée
+            //Requète sql pour maj des informations dans la base de donnée
             $sql = "UPDATE `utilisateurs` SET `login`='$loginp',`password`='$passwordp' WHERE id = $id";
             $requete = mysqli_query($bdd, $sql);
 
@@ -45,7 +45,7 @@ if (!empty($_POST)) {
             exit();
         } elseif ($loginp != $login) {
 
-            // on verifi si on a un login correspondant 
+            // verification des login correspondant 
             $sqlVerif =  "SELECT * FROM utilisateurs WHERE login = '$loginp'";
             $select = mysqli_query($bdd, $sqlVerif);
 
@@ -126,3 +126,9 @@ if (!empty($_POST)) {
 require 'footer.php';
 
 ?>
+
+
+
+
+
+<!-- num row  retourne le nombre de ligne -->

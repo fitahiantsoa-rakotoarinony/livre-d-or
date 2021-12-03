@@ -51,7 +51,7 @@ if (!empty($_POST)) {
 }
 
 //var_dump(est_connecte());
-//Empecher l'utilisateur de venir sur cette page si il est connecté
+//Empecher l'utilisateur de venir sur cette page s' il est connecté
 if (est_connecte()) {
     header('Location: index.php ');
     exit();

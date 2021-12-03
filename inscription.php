@@ -13,7 +13,7 @@ if (!empty($_POST)) {
 
     if (isset($login, $password) && !empty($login)  && !empty($password)) {
 
-        // on verifi si on a un login correspondant 
+        //  verification des  login correspondant 
         $sqlVerif =  "SELECT * FROM utilisateurs WHERE login = '$login'";
         $select = mysqli_query($bdd, $sqlVerif);
 
