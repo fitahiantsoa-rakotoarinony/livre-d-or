@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    background-color: rgb(255, 163, 163);
+  }
+
+  /* Style hearder*/
+ /
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(226, 161, 161);
+    align-items: center;
+    box-shadow: 41px 41px 82px antiquewhite, -41px -41px 82px rgb(204, 148, 148);
+  }
+  
+  .menu {
+    width: 71%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    height: 60px;
+    width: 78px;
+    border: white;
+    background-color: rgb(229, 151, 151);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(154, 189, 204);
+    color: #ffffff;
+    box-shadow: 41px 41px 82px antiquewhite, -41px -41px 82px #ffffff;
+  }
+  /* connexion */
+  
+  .sectioncon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+  }
+  
+  .formcon {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 141, 141);
+  }
+  .fieldsetcon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 24px 24px 48px #e59797, -24px -24px 48px #ffffff;
+  }
+  
+  .messagealert {
+    text-align: center;
+    height: 80px;
+    padding: 30px;
+    margin-top: 10px;
+    background: linear-gradient(to bottom right, rgb(182, 96, 96), rgb(194, 90, 90));
+    color: rgb(181, 220, 255);
+    border-radius: 5px;
+    box-shadow: 24px 24px 48px #e49b9b, -24px -24px 48px #ffffff;
+  }
+  .messageok {
+    text-align: center;
+    height: 80px;
+    padding: 30px;
+    margin-top: 10px;
+    background: linear-gradient(to bottom right, rgb(63, 115, 150), rgb(54, 153, 199));
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 24px 24px 48px #c98888, -24px -24px 48px #ffffff;
+  }
+  .submitbutton {
+    background: linear-gradient(to bottom right, rgb(63, 115, 150), rgb(54, 153, 199));
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  .inputelmt {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  legend {
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  
+ 
+  /* style page commentaire */
+
+  .formcommentaire {
+    display: flex;
+    justify-content: center;
+    height: 760px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .comment {
+    height: 200px;
+    width: 480px;
+    padding: 10px;
+    margin: 20px;
+    background: #ffffff;
+    box-shadow: 24px 24px 48px #e69a9a, -24px -24px 48px #ffffff;
+  }
+  .formcom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .element1 {
+    width: 200px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: xx-large;
+    background: linear-gradient(to bottom right, dodgerblue, blue);
+    color: rgb(172, 255, 255);
+    cursor: pointer;
+    box-shadow: 24px 24px 48px #eca0a0, -24px -24px 48px #ffffff;
+  }
+  .element2 {
+    width: 200px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: xx-large;
+    background: linear-gradient(to bottom right, rgb(145, 12, 12), red);
+    color: rgb(170, 253, 253);
+    cursor: pointer;
+    box-shadow: 24px 24px 48px #da9090, -24px -24px 48px #ffffff;
+  }
+  
+  .color {
+    color: blue;
+  }
+  
+
+  /* style profil */
+ 
+  
+  .element3 {
+    width: 150px;
+    border-radius: 30px;
+    height: 35px;
+    font-size: larger;
+    background: linear-gradient(to bottom right, rgb(145, 12, 12), red);
+    color: rgb(173, 252, 252);
+  }
+  
+  .fieldsetprofil {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 390px;
+    padding: 30px;
+  }
+
+  /* style page index */
+  
+  
+  .child1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lien {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    margin: 30px;
+    width: 400px;
+    background: linear-gradient(to bottom right, rgb(139, 233, 236), #d17c7c);
+    box-shadow: 24px 24px 48px #da8888, -24px -24px 48px #ffffff;
+  }
+  
+  .sectionindex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .seajt{
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .el{
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .textindex {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    margin: 30px;
+    width: 400px;
+    background: linear-gradient(to bottom right, rgb(146, 241, 248), #da7c7c);
+    box-shadow: 24px 24px 48px #da7d7d, -24px -24px 48px #ffffff;
+  }
+  
+ 
+  /*livre or */
+  
+  thead,
+  tfoot {
+    background-color: #3f87a6;
+    color: #fff;
+  }
+  
+  tbody {
+    background-color: #9dd2e9;
+  }
+  
+  table {
+    border: 2px solid rgb(212, 139, 139);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 24px 24px 48px #da7c7c, -24px -24px 48px #ffffff;
+  }
+  
+  td,
+  th {
+    border: 1px solid rgb(214, 153, 153);
+    padding: 5px 10px;
+  }
+  
+  .element4 {
+    width: 400px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: xx-large;
+    background: linear-gradient(to bottom right, #3f87a6, #fff);
+    color: rgb(145, 235, 235);
+    cursor: pointer;
+    box-shadow: 24px 24px 48px #da7c7c, -24px -24px 48px #ffffff;
+  }
+  .ajout{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  
+
+  /* footer */
+ 
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    background-color: rgb(238, 168, 168);
+    align-items: center;
+  }
